@@ -75,7 +75,7 @@ python Feature_Selection.py
 python Model_optimization_and_evaluation.py
 ```
 
-### 6. Evaluate Models and Generate Figures
+### 6. Model Evaluation and Figure Generation
 
 ```bash
 python ML_model_evaluation.py
@@ -86,7 +86,7 @@ python ROC_curve.py
 
 ## Notes
 
-- If the automatic data import of the datasets in the R script does not work, please use the provided datasets to import it in R.
+- To ensure reproducibility given the dynamic nature of the TCGA database, the processed TCGA dataframes used in this study, including transcriptome reads, phenotype annotations, and survival information, have been archived and are available in this GitHub repository under the file name TCGA_PAAD.tar.gz
 - All gene expression values were normalized to log₂(FPKM + 1).
 - Sex-specific models were trained separately on male and female subsets.
 - The deployed version of the model (accessible at https://www.gap-app.org/) was not used to generate results in this manuscript and is not included here.
